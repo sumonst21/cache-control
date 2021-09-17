@@ -4,6 +4,7 @@
  * Date: Sep 5, 2009
  * Published on: https://css-tricks.com/snippets/php/intelligent-php-cache-control/
  * Collected and Modified by: Sumonst21
+ * Description: This code snippet checks if a page has been modified since it was last displayed. If so, it sends a “304 not modified” header and exits, otherwise the content is rendered. Prepend this snippet on top of every PHP file you want to apply this intelligent caching-mechanism. Especially useful if you (have to) serve static content via php and want it to be cached like ordinary HTML or CSS.
  */
 //get the last-modified-date of this very file
 $lastModified=filemtime(__FILE__);
